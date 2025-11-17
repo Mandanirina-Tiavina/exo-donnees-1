@@ -9,3 +9,6 @@ SELECT Leave.id, Leave.start_date, Leave.end_date, Employee.first_name, Employee
 
 -- exo 4
 SELECT contract_type, COUNT(*) FROM Employee GROUP BY contract_type;
+
+-- exo 5
+SELECT COUNT(*) FROM Leave WHERE start_date <= CURRENT_DATE AND end_date >= CURRENT_DATE;
